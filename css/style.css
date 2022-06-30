@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+body {
+    font-family: 'Product Sans', sans-serif;
+}
+
+.fs-sm{
+    font-size: .75rem;
+}
+
+.input-text{
+    width: 85%;
+}
+
+.btn-move {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 150ms ease-in-out;
+}
+
+.person:hover .btn-move {
+    opacity: 1;
+    visibility: visible;
+}
+
+.person.ms-auto .person-img{
+    display: none;
+}
+
+.person.ms-auto .message__person{
+    background-color: #d6e4fe !important;
+}
+
+.ui-phone{
+    resize:horizontal;
+    overflow:auto;
+    max-width: 100%;
+    min-width: 24em;
+}

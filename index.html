@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+    <title>Hello, world!</title>
+</head>
+<body>
+    <div class="container min-vh-100">
+        <div class="row my-4 p-4 justify-content-center align-items-center gap-4">
+            <div class="col-4 p-4 bg-white">
+                <div class="form-group">
+                    <div class="contact">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control form-control-sm" id="name-contact"
+                            placeholder="Tío Charly">
+                    </div>
+                    <div class="mt-3">
+                        <p>Iconos</p>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="duo" checked>
+                        <label class="form-check-label" for="duo">Google Duo</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="call" checked>
+                        <label class="form-check-label" for="call">Llamar</label>
+                    </div>
+                    <div class="mt-3">
+                        <p>Mensajes</p>
+                    </div>
+                    <div class="menssages">
+                        <textarea class="form-control" name="message" id="message"></textarea>
+                        <button id="add-message" class="btn btn-sm btn-light rounded-pill mt-2">Agregar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 p-4 bg-light rounded">
+
+                <div class="pb-4">
+                    <div class="d-flex align-items-center gap-2">
+                        <p class="m-0">Live <span class="text-danger">Preview</span></p>
+                        <img src="img/visibility.svg" class="img-fluid" alt="" width="20">
+                    </div>
+                </div>
+                <div id="capture" class="card d-flex h-100 border-0 ui-phone">
+                    <div class="card-header bg-white p-2 border-0">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="number d-flex align-items-center justify-content-center">
+                                <img src="img/arrow_back.svg" class="img-fluid" alt="" width="20">
+                                <p id="contact-person" class="ms-3 m-0">55 92622 5784</p>
+                            </div>
+                            <div class="search">
+                                <div class="d-flex justify-content-center align-items-center gap-4">
+                                    <img src="img/duo.svg" class="img-fluid duo" alt="" width="20">
+                                    <img src="img/call.svg" class="img-fluid call" alt="" width="20">
+                                    <img src="img/search.svg" class="img-fluid" alt="" width="20">
+                                    <img src="img/more_vert.svg" class="img-fluid" alt="" width="20">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="text-center my-2">
+                            <p class="date text-muted m-0 fs-sm">Tuesday, May 5, 2020 - 9:09 AM</p>
+                        </div>
+                        <div id="content-messages" class="d-flex flex-column align-items-center">
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white w-100 p-0 px-2 py-2 m-0 border-0">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="media d-flex gap-2">
+                                <img src="img/add_circle.svg" class="img-fluid" alt="" width="20">
+                                <img src="img/add_a_photo.svg" class="img-fluid" alt="" width="20">
+                            </div>
+                            <div
+                                class="px-2 py-1 rounded-pill bg-light input-text d-flex align-items-center justify-content-between">
+                                <p class="m-0">Text message</p>
+                                <div class="media">
+                                    <img src="img/mood.svg" class="img-fluid" alt="" width="20">
+                                    <img src="img/mic.svg" class="img-fluid" alt="" width="20">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-4">
+                    <div class="d-flex align-items-center gap-2">
+                        <button
+                            class="btn btn-sm bg-white rounded-pill d-flex align-items-center gap-2 btn-download text-danger">Download<img
+                                src="img/file_download.svg" class="img-fluid" alt="" width="20"></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</body>
+
+</html>
